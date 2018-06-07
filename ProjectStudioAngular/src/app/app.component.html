@@ -1,0 +1,31 @@
+<mat-sidenav-container class="all-wrap" fullscreen>
+<mat-sidenav #sidenav>
+	<mat-list>
+	<mat-list-item>Foo</mat-list-item>
+	<mat-list-item>Bar</mat-list-item>
+	</mat-list>
+</mat-sidenav>
+
+<div class="page-wrap">
+	<header role="banner">
+	<mat-toolbar color="primary">
+		<button type="button" mat-icon-button (click)="sidenav.open()" title="Open sidenav">
+		<mat-icon>menu</mat-icon>
+		</button>
+		Project Studio
+	</mat-toolbar>
+	</header>
+	<main class="content">
+	<div class="main-logo center">
+		<h1>Welcome to the Project Studio!</h1>
+		<i class="material-icons dp48">explore</i>
+		<div>
+			<button mat-raised-button color="primary">Getting started</button>
+		</div>   
+	</div>
+	</main>
+	<footer>
+	Siarhei Yatsynovich (C)
+	</footer>
+</div>
+</mat-sidenav-container>
